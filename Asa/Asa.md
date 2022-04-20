@@ -108,7 +108,11 @@ dhcpd dns 8.8.8.8 interface inside
 dhcpd option 150 ip 172.16.19.1 interface inside
 dhcpd enable inside
 ```
-
+Outside Routes
+```
+route outside 0.0.0.0 0.0.0.0 172.16.19.1 1
+route outside 0.0.0.0 0.0.0.0 172.16.19.1 3
+```
 Access-Lists
 ```
 access-list INTERNET extended permit icmp any any echo-reply 
