@@ -44,7 +44,7 @@ ip route 172.17.19.0 255.255.255.0 172.16.19.2
 ip route 172.18.19.0 255.255.255.0 172.16.19.2
 ```
 
-IPsec Configuration
+IPsec Configuration with Encryption
 ```
 crypto map OMAPA 10 ipsec-isakmp 
 set peer 1.19.0.1
