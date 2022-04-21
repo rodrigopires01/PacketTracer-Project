@@ -26,12 +26,6 @@ Interfaces
 interface Port-channel1
 switchport mode trunk
 
-interface FastEthernet0/3
-switchport mode trunk
-
-interface FastEthernet0/4
-switchport mode trunk
-
 interface FastEthernet0/11
 switchport mode trunk
 channel-protocol lacp
