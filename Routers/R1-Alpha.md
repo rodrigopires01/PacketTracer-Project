@@ -13,9 +13,8 @@ ip dhcp excluded-address 172.18.19.1
 ip dhcp pool inside
 network 172.18.19.0 255.255.255.0
 default-router 172.18.19.253
-option 150 ip 172.18.19.1
+option 150 ip 172.16.19.1
 dns-server 8.8.8.8
-exit
 ```
 
 Access-Lists to do NAT, VPN and Route HTTP/HTTPS packets to the server.
@@ -89,7 +88,7 @@ VOIP
 telephony-service
 max-ephones 10
 max-dn 10
-ip source-address 172.18.19.1 port 2000
+ip source-address 172.16.19.1 port 2000
 auto assign 1 to 10
 
 ephone-dn 1
