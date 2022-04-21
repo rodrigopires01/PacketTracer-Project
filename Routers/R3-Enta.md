@@ -134,11 +134,24 @@ number 101
 EIGRP
 ```
 router eigrp 100
+no auto-summary
 redistribute static
 network 10.0.19.0 0.0.0.255
 network 10.1.19.0 0.0.0.255
 network 10.2.19.0 0.0.0.255
 network 192.168.19.0 0.0.0.3
+passive-interface GigabitEthernet0/0
+passive-interface GigabitEthernet0/0.10
+passive-interface GigabitEthernet0/0.20
+passive-interface GigabitEthernet0/0.30
+passive-interface GigabitEthernet0/1
+
+router eigrp 200
+no auto-summary
+redistribute static
+network 10.0.19.0 0.0.0.255
+network 10.1.19.0 0.0.0.255
+network 10.2.19.0 0.0.0.255
 network 192.168.19.4 0.0.0.3
 passive-interface GigabitEthernet0/0
 passive-interface GigabitEthernet0/0.10
